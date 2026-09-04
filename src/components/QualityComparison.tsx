@@ -51,7 +51,7 @@ export function QualityComparison() {
             <div className="mt-6 space-y-4">
               <Bar label="Cost" pct={53} color="var(--violet)" />
               <Bar label="Quality" pct={94} color="var(--lime)" />
-              <Bar label="Latency" pct={54} color="var(--cyan)" />
+              <Bar label="Latency" pct={62} color="var(--cyan)" />
             </div>
           </div>
         </div>
@@ -85,6 +85,11 @@ export function QualityComparison() {
             </tbody>
           </table>
         </div>
+
+        <p className="mt-6 text-center text-sm text-muted-foreground">
+          Optimize spend without silently sacrificing intelligence.{" "}
+          <span className="font-mono text-xs">All values shown are demo data.</span>
+        </p>
       </div>
     </section>
   );
