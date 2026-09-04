@@ -51,7 +51,7 @@ export function QualityComparison() {
             <div className="mt-6 space-y-4">
               <Bar label="Cost" pct={53} color="var(--violet)" />
               <Bar label="Quality" pct={94} color="var(--lime)" />
-              <Bar label="Latency" pct={54} color="var(--cyan)" />
+              <Bar label="Latency" pct={62} color="var(--cyan)" />
             </div>
           </div>
         </div>

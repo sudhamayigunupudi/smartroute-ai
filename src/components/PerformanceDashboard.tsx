@@ -27,7 +27,7 @@ export function PerformanceDashboard({ summary }: { summary: PerformanceSummary 
           <MetricCard label="SAVINGS" value={`${summary.savingsPct.toFixed(1)}%`} icon={<Sparkles className="h-4 w-4" />} hint="Cost reduction" />
           <MetricCard label="QUALITY SCORE" value={`${summary.qualityScore}%`} icon={<Gauge className="h-4 w-4" />} accent="lime" hint="Within 1pt of baseline" />
           <MetricCard label="CACHE HIT RATE" value={`${summary.cacheHitRate}%`} icon={<DatabaseZap className="h-4 w-4" />} accent="cyan" hint="Reused context blocks" />
-          <MetricCard label="AVG LATENCY" value="640 ms" icon={<Activity className="h-4 w-4" />} accent="magenta" hint="46% faster than baseline" />
+          <MetricCard label="AVG LATENCY" value="420 ms" icon={<Activity className="h-4 w-4" />} accent="magenta" hint="38% faster than baseline" />
         </div>
 
         <div className="mt-6">
