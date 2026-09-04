@@ -19,6 +19,18 @@ export function PerformanceDashboard({ summary }: { summary: PerformanceSummary 
           subtitle="Demo data from a simulated 1,248-request workload."
         />
 
+        <div className="mt-6 flex justify-center">
+          <span
+            className="rounded-full border px-4 py-1.5 font-mono text-[11px] font-semibold tracking-[0.18em]"
+            style={{
+              borderColor: "color-mix(in oklab, var(--cyan) 45%, transparent)",
+              color: "var(--cyan)",
+            }}
+          >
+            DEMO DATA
+          </span>
+        </div>
+
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <MetricCard label="TOTAL REQUESTS" value={summary.totalRequests.toLocaleString()} icon={<Activity className="h-4 w-4" />} hint="Demo workload" />
           <MetricCard label="BASELINE COST" value={`$${summary.baselineCost.toFixed(2)}`} icon={<Coins className="h-4 w-4" />} accent="magenta" hint="Always powerful model" />
