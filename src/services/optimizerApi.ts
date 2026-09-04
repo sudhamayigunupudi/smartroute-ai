@@ -93,3 +93,19 @@ export async function getPerformanceSummary(): Promise<PerformanceSummary> {
     cacheHitRate: 38,
   };
 }
+
+export interface CacheAnalytics {
+  cacheStatus: "HIT" | "MISS";
+  cacheHitRate: number;
+  tokensReused: number;
+  estimatedSavings: number;
+}
+
+/** MOCK — replace with GET `${API_BASE}/cache-analytics` */
+export async function getCacheAnalytics(): Promise<CacheAnalytics> {
+  await delay(200);
+  return { cacheStatus: "HIT", cacheHitRate: 38, tokensReused: 24850, estimatedSavings: 3.21 };
+}
+
+/** Alias kept for the documented service-layer name. */
+export const getPerformanceMetrics = getPerformanceSummary;
