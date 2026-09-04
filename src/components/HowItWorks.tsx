@@ -18,7 +18,7 @@ export function HowItWorks() {
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {HOW_IT_WORKS.map((s, i) => {
-              const Icon = ICONS[i];
+              const Icon = ICONS[i] ?? BrainCircuit;
               return (
                 <div key={s.step} className="relative">
                   <div
